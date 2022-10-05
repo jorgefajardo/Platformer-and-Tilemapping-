@@ -35,6 +35,11 @@ public class PlayerScript : MonoBehaviour
             scoreValue += 1;
             score.text = scoreValue.ToString();
             Destroy(collision.collider.gameObject);
+
+            if (scoreValue == 3)
+            {
+                score.text = "You Win Fajardo";
+            }
         }
 
     }
